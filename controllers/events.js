@@ -1,5 +1,5 @@
 const { response } = require("express");
-
+//obtener eventos
 const getEventos = (req, res = response) => {
   res.json({
     ok: true,
@@ -7,6 +7,7 @@ const getEventos = (req, res = response) => {
   });
 };
 
+//crear un evento
 const crearEvento = (req, res = response) => {
   //Verificar que tenga el evento.
   console.log(req.body);
@@ -16,6 +17,7 @@ const crearEvento = (req, res = response) => {
   });
 };
 
+//Actualizar evento
 const actualizarEvento = (req, res = response) => {
   res.json({
     ok: true,
@@ -23,6 +25,7 @@ const actualizarEvento = (req, res = response) => {
   });
 };
 
+//Borrar evento
 const eliminarEvento = (req, res = response) => {
   res.json({
     ok: true,
